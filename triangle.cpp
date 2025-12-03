@@ -1,11 +1,13 @@
 #include<stdio.h>
-int main ()
- float base, height, area;
-printf("enter the base");
-scanf("%f",&base);
-printf("enter the height:");
-scanf("%f",&height);
-area=0.5*base*height;
-printf("area of triangle:%f",area);
-return 0;
+int main()
+{
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a==b&&b==c&&c==a)
+    printf("Equilateral triangle");
+    else if(a==b||b==c||c==a)
+    printf("Isosceles triangle");
+    else 
+    printf("Scalene triangle");
+    return 0;
 }
